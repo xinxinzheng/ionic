@@ -1,3 +1,23 @@
 page-home {
-
+    ion-content{
+        background: #F0F0F0;    
+    }
+    .article-list{
+        padding: 0px;
+        .article-info{
+            margin-bottom:10px;
+            list-style: none;
+            border:1px solid #E6E9EE;
+            border-radius:2px;
+            padding:5px;
+            background: white;
+            .article-block{
+                .article-author{
+                    height:30px;
+                    line-height:30px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
 }
