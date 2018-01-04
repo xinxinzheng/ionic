@@ -9,12 +9,12 @@
     <li class="article-info" *ngFor="let article of ArticleList">
       <div class="article-block">
         <div class="article-author">
-            <img src="{{article.user_head}}" style="width:15px;">
+            <img src="{{article.user_head}}" style="width:15px;vertical-align:middle;">
             <span>{{article.user}}</span>
-            <span>{{article.type}}</span>
+            <span style="float:right">{{JSON.parse(article.type)}}</span>
         </div>
-        <p><b>{{article.title}}</b></p>
-        <article>{{article.info}}</article>
+        <p class="article-title"><b>{{article.title}}</b></p>
+        <article class="article-content">{{article.info}}</article>
       </div>
     </li>
   </ul>
