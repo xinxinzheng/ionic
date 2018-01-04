@@ -14,6 +14,10 @@ export class HomePage implements OnInit {
   ngOnInit(){
     this.$http.get('/api/articlelist').subscribe(data => {
       this.ArticleList = data['data'];
+      this.ArticleList.map(article => {
+        article.types = JSON.parse(article.type).join(' / ');
+      })
+
       console.log(this.ArticleList);
     });
   }
