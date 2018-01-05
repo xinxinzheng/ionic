@@ -7,51 +7,119 @@
             "data":[]
         }
     },{
+        "method": "post",
+        "url": "/api/userlist",
+        "response": {
+            "errorCode": 0,
+            "errorMsg": "",
+            "data":[{
+                "id":1,
+                "user":"张三"
+            }]
+        }
+    },{
+        "method": "get",
+        "url": "/api/textList",
+        "response": {
+            "errorCode": 0,
+            "errorMsg": "",
+            "data":[{
+                "id":1,
+                "user":"admin",
+                "date":"2016-10-10 12:12:12",
+                "text":"主要原因我觉得是整个程序员的氛围不一样，国人程序员平时压力很大做的很多，基本上网不会想去怎么费劲的回答问题和做一些分享了，希望吹吹水什么的。而外国人大部分程序员是拿着高福利正常休假的，偶尔上网分享回答问题都是很正常的。"
+            },{
+                "id":2,
+                "user":"admin",
+                "date":"2016-10-10 12:12:12",
+                "text":"而且在国内程序员基本都是当做一个工具，有任务了就拿来用，做完就滚蛋，程序员也都习惯了。你指望一个民工会帮你义务搬运点东西么"
+            },{
+                "id":3,
+                "user":"admin",
+                "date":"2016-10-10 12:12:12",
+                "text":"回答问题的人，我见过很多上来先喷的，比如说有人问个内存段错误的问题，有的人回答问题上来先问候亲属，质疑问问题人的智力水平，然后再瞎忽悠一通"
+            },{
+                "id":4,
+                "user":"admin",
+                "date":"2016-10-10 12:12:12",
+                "text":"就程序员而言，上Stackworkflow已经可以找到很多技术相关的答案了。在这方面，我感觉国内企业内部倒是需要这样一个内部交流的平台。"
+            }]
+        }
+    },{
+        "method": "post",
+        "url": "/api/user_article",
+        "response": {
+            "errorCode": 0,
+            "errorMsg": "",
+            "data":[{
+                "user":1,
+                "article":1,
+                "like":false,
+                "text":""
+            }]
+        }
+    },{
         "method": "get",
         "url": "/api/articlelist",
         "response": {
             "errorCode": 0,
             "errorMsg": "",
             "data": [{
+                "id":1,
                 "createTime": "2017-01-01 00:00:00",
                 "user": "admin",
                 "title":"如何在真实世界构建你的Mobx应用程序",
                 "info":"本文是受到@mwestrase许多文章的启发， 以及经过几个星期将一个大型的Backbone应用程序重构为React + MobX应用程序，是将Mobx添加到一个普通的React项目的“衣钵传人”。",
                 "user_head":"/assets/imgs/head.png",
                 "type":"[\"webpack\",\"css\"]",
-                "logo":""
+                "logo":"",
+                "favourate":15,
+                "like":false,
+                "text":[]
             }, {
+                "id":2,
                 "createTime": "2017-01-01 00:00:00",
                 "user": "admin",
                 "user_head":"/assets/imgs/head.png",
                 "title":"如何在真实世界构建你的Mobx应用程序",
                 "info":"本文是受到@mwestrase许多文章的启发， 以及经过几个星期将一个大型的Backbone应用程序重构为React + MobX应用程序，是将Mobx添加到一个普通的React项目的“衣钵传人”。",
                 "type":"[\"webpack\",\"css\"]",
-                "logo":""
+                "logo":"",
+                "favourate":15,
+                "like":false
             },{
+                "id":3,
                 "createTime": "2017-01-01 00:00:00",
                 "user": "admin",
                 "user_head":"/assets/imgs/head.png",
                 "title":"如何在真实世界构建你的Mobx应用程序",
                 "info":"本文是受到@mwestrase许多文章的启发， 以及经过几个星期将一个大型的Backbone应用程序重构为React + MobX应用程序，是将Mobx添加到一个普通的React项目的“衣钵传人”。",
                 "type":"[\"webpack\",\"css\"]",
-                "logo":""
+                "logo":"",
+                "favourate":15,
+                "like":false
             },{
+                "id":4,
                 "createTime": "2017-01-01 00:00:00",
                 "user": "admin",
                 "user_head":"/assets/imgs/head.png",
                 "title":"如何在真实世界构建你的Mobx应用程序",
                 "info":"本文是受到@mwestrase许多文章的启发， 以及经过几个星期将一个大型的Backbone应用程序重构为React + MobX应用程序，是将Mobx添加到一个普通的React项目的“衣钵传人”。",
                 "type":"[\"webpack\",\"css\"]",
-                "logo":""
+                "logo":"",
+                "favourate":15,
+                "like":false
             },{
+                "id":5,
                 "createTime": "2017-01-01 00:00:00",
                 "user": "admin",
                 "user_head":"/assets/imgs/head.png",
                 "title":"如何在真实世界构建你的Mobx应用程序",
                 "info":"本文是受到@mwestrase许多文章的启发， 以及经过几个星期将一个大型的Backbone应用程序重构为React + MobX应用程序，是将Mobx添加到一个普通的React项目的“衣钵传人”。",
                 "type":"[\"webpack\",\"css\"]",
-                "logo":""
+                "logo":"",
+                "favourate":0,
+                "like":false
             }]
         }
     }

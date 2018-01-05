@@ -12,7 +12,7 @@ page-home {
             padding:10px 8px;
             background: white;
             .article-block{
-                height:100px;
+                height:120px;
                 
                 .article-author{
                     height:30px;
@@ -28,6 +28,10 @@ page-home {
                     height:50px;
                     line-height: 25px;
                     text-overflow: ellipsis;
+                }
+                .article-foot{
+                    height:20px;
+                    padding-top:5px;
                 }
             }
         }

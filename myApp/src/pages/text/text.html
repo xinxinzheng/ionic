@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>评论</ion-title>
+    </ion-navbar>
+</ion-header>
+      
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-textarea [(ngModel)]="text" rows="8" placeholder="请留下您宝贵的意见"></ion-textarea>
+        </ion-item>   
+        <button (click)="submitText()" class="submit-text" ion-button full>提交</button>
+    </ion-list>
+    <div class="text-list">
+        <div class="text" *ngFor="let t of textList">
+            <p>
+                <span>
+                    <img src="/assets/imgs/head.png" style="width:15px;vertical-align:middle;">
+                    {{t.user}}
+                </span>
+                <span style="float:right">{{t.date}}</span>
+            </p>
+            <p>{{t.text}}</p>
+        </div>
+    </div>
+</ion-content>
+        
+       
+      

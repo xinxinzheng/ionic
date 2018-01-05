@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 
 export class MessagePage implements OnInit {
-  public ArticleList = [];
+  
   constructor(public navCtrl: NavController , private $http: HttpClient) {
 
   }
